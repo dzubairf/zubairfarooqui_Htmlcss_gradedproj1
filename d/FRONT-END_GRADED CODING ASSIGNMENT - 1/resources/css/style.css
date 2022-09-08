@@ -1,0 +1,280 @@
+header {
+    background-color: rgb(83, 82, 82);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    position: relative;
+    bottom: 0%;
+    width: 98%;
+    margin-bottom: 2px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#navigation {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+#menu li>a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu {
+    margin: 0%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#menu li {
+    display: inline-block;
+    padding: 13px;
+}
+
+#menu li:hover {
+    background-color: rgba(20, 20, 20, 0.7);
+}
+
+.dropdownmenu {
+    position: relative;
+    display: inline-block;
+}
+
+.menuitems {
+    display: none;
+    position: absolute;
+    margin-left: -12px;
+    margin-top: 10px;
+    background-color: white;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0px;
+}
+
+.menuitems a {
+    text-decoration: none;
+    float: none;
+    display: block;
+    padding: 10px 16px 10px 8px;
+}
+
+.dropdownmenu:hover .menuitems {
+    display: block;
+}
+
+#imganimation {
+    border-style: solid;
+    border-width: 2px;
+    border-color: steelblue;
+    position: relative;
+    margin: 3px auto;
+    display: block;
+    height: 68%;
+    padding: 2px 2px 2px 2px;
+    float: left;
+}
+
+#imganimation img {
+    position: absolute;
+    left: 0;
+    animation-name: animateImage;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-duration: 10s;
+    animation-direction: normal;
+}
+
+@keyframes animateImage {
+    0% {
+        opacity: 1;
+    }
+
+    17% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    92% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#imganimation img:nth-of-type(1) {
+    animation-delay: 20s;
+}
+
+#imganimation img:nth-of-type(2) {
+    animation-delay: 15s;
+}
+
+#imganimation img:nth-of-type(3) {
+    animation-delay: 10s;
+}
+
+#imganimation img:nth-of-type(4) {
+    animation-delay: 5s;
+}
+
+#imganimation img:nth-of-type(5) {
+    animation-delay: 0;
+}
+
+.caremenu {
+    margin: 10px;
+    overflow-x: auto;
+    position: relative;
+}
+
+.index__tilemenu {
+    margin-top: 400px;
+}
+
+.careitems {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.itemcell:hover {
+    transform: scale(1.05);
+}
+
+.itemcell {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 0px 20px 10px 10px;
+    width: 200px;
+    box-shadow: 5px 10px 8px #888888;
+    background-color: rgb(199, 199, 248, 0.2);
+}
+
+.itemcell span {
+    color: rgb(16, 158, 215);
+    font-size: medium;
+}
+
+.itemcell img {
+    width: 200px;
+    height: 100px;
+}
+
+.itemcell button {
+    width: 200px;
+    border-color: rgb(89, 89, 175);
+    border-width: 1px;
+    border-radius: 5px;
+    color: orange;
+    font-weight: bold;
+    background-color: rgba(166, 166, 223, 0.3);
+}
+
+.itemcell button:hover {
+    cursor: pointer;
+}
+
+.itemcell button:focus {
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+}
+
+.labtest__main {
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 0px 10px 10px;
+    height: 500px;
+}
+
+.labtest__form {
+    display: flex;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border: 1px solid red; */
+    overflow-y: scroll;
+    height: 450px;
+}
+
+.labtest__formbody {
+    width: 100%;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.labtest__image {
+    width: 80%;
+}
+
+#labtest__buttons {
+    text-align: left;
+    margin-left: 300px;
+    position: relative;
+}
+
+.labtest__input {
+    height: 20px;
+    padding: 5px;
+    margin: 5px 0px 5px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+}
+
+#labtest__buttons input {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px 3px 3px 3px;
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+#labtest__district {
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+
+}
+
+.labtest__checkbox {
+    padding: 5px 0px 5px 0px;
+    margin: 5px 0px 5px 0px;
+}
+
+h3 {
+    padding: 5px;
+}
+
+#labtest__datetime {
+    border-radius: 5px;
+    height: 30px;
+    width: 180px;
+    border: 1px solid grey;
+    color: gray;
+}
